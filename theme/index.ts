@@ -5,6 +5,7 @@ export default {
     secondary: "#F7F7F7",
     inputs: "#9E9E9E",
     primary: "#3563E9",
+    placeholders: "#bdbdbd",
   },
   fonts: {
     primary: "Inter",
