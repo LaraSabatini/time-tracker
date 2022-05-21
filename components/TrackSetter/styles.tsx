@@ -13,6 +13,14 @@ const Title = styled.p`
   margin: 0;
 `
 
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  width: 90%;
+  margin: 0 auto;
+`
+
 const CardHeader = styled.div`
   display: flex;
   gap: 46px;
@@ -28,6 +36,7 @@ const Input = styled.div`
   gap: 10px;
   border: 1px solid ${theme.colors.inputs};
   input {
+    width: 100%;
     border: none;
     outline: none;
     font-family: ${theme.fonts.primary};
@@ -52,14 +61,6 @@ const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
-`
-
-const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 17px;
-  width: 766px;
-  margin: 0 auto;
 `
 
 const ButtonContainer = styled.div`

@@ -14,7 +14,15 @@ import {
 } from "./styles"
 
 function TrackerSetter() {
-  const { startedAt, timer } = useContext(TrackerContext)
+  const { startedAt, timer, setWindowSize } = useContext(TrackerContext)
+
+  window.addEventListener("resize", () => {
+    if (document.body.clientWidth <= 1342) {
+      setWindowSize(document.body.clientWidth)
+    } else {
+      setWindowSize("1366")
+    }
+  })
 
   return (
     <Card>

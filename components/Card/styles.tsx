@@ -6,6 +6,10 @@ const Container = styled.div`
   border-radius: 10px;
   width: 47.77%;
   padding: 35px;
+
+  @media (max-width: 1800px) {
+    width: 80%;
+  }
 `
 
 export default Container
