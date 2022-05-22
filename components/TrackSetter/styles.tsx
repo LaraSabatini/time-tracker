@@ -70,7 +70,7 @@ const ButtonContainer = styled.div`
   align-self: flex-end;
 `
 
-const Button = styled.button<{ active?: boolean }>`
+const Button = styled.button<{ active?: boolean; disabled?: boolean }>`
   line-height: 19px;
   letter-spacing: 0.46px;
   font-family: ${theme.fonts.primary};
@@ -87,6 +87,13 @@ const Button = styled.button<{ active?: boolean }>`
     css`
       background-color: ${theme.colors.primary};
       color: white;
+    `}
+
+  ${props =>
+    props.disabled &&
+    css`
+      opacity: 0.3;
+      cursor: auto;
     `}
 `
 

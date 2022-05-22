@@ -10,6 +10,8 @@ export const TrackerContext = createContext({
   setTimer: null,
   windowSize: null,
   setWindowSize: null,
+  newItem: null,
+  setNewItem: null,
 })
 
 function TrackerContextProvider({ children }: any) {
@@ -21,34 +23,26 @@ function TrackerContextProvider({ children }: any) {
       end_time: string
       duration: string
     }[]
-  >([
-    {
-      id: 0,
-      description: "Hacer el challenge de roswell studios",
-      start_time: "05:09:50",
-      end_time: "05:10:50",
-      duration: "10 minutes",
-    },
-    {
-      id: 1,
-      description: "Went for a run outside with my dog buddy.",
-      start_time: "05:09:50",
-      end_time: "05:10:50",
-      duration: "10 minutes",
-    },
-    {
-      id: 2,
-      description: "Went for a run",
-      start_time: "05:09:50",
-      end_time: "05:10:50",
-      duration: "10 minutes",
-    },
-  ])
+  >([])
 
   const [startedAt, setStartedAt] = useState<string>("00:00:00")
   const [timer, setTimer] = useState<string>("00:00:00")
 
   const [windowSize, setWindowSize] = useState<string>("1366")
+
+  const [newItem, setNewItem] = useState<{
+    id: number
+    description: string
+    start_time: string
+    end_time: string
+    duration: string
+  }>({
+    id: 0,
+    description: "",
+    start_time: "",
+    end_time: "",
+    duration: "",
+  })
 
   return (
     <TrackerContext.Provider
@@ -61,6 +55,8 @@ function TrackerContextProvider({ children }: any) {
         setTimer,
         windowSize,
         setWindowSize,
+        newItem,
+        setNewItem,
       }}
     >
       {children}
