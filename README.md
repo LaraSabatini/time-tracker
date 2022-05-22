@@ -19,8 +19,8 @@ yarn run dev
 
 ### Project view
 
-// images
-
+![Image 1](./img1.png)
+![Image 2](./img2.png)
 
 ### See live project
 
