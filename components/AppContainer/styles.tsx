@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import theme from "../../theme"
 
 const Container = styled.div`
   display: flex;
@@ -8,4 +9,13 @@ const Container = styled.div`
   gap: 30px;
 `
 
-export default Container
+const CardTitle = styled.h3`
+  font-family: ${theme.fonts.primary};
+  font-weight: ${theme.fontWeights.bold};
+  font-size: ${theme.fontSizes.m};
+  line-height: 19px;
+  color: ${theme.colors.black};
+  margin: 0 0 -20px -70%;
+`
+
+export { Container, CardTitle }

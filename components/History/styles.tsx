@@ -1,19 +1,6 @@
 import styled, { css } from "styled-components"
 import theme from "../../theme"
 
-const CardTitle = styled.h3`
-  font-family: ${theme.fonts.primary};
-  font-weight: ${theme.fontWeights.bold};
-  font-size: ${theme.fontSizes.m};
-  line-height: 19px;
-  color: ${theme.colors.black};
-  margin: 0 45% -20px 0px;
-
-  @media (max-width: 1800px) {
-    margin: 0 65% -20px 0px;
-  }
-`
-
 const Table = styled.div``
 
 const TableTitle = styled.h5<{ desktop?: boolean }>`
@@ -105,7 +92,6 @@ const MobileContainer = styled.div`
 `
 
 export {
-  CardTitle,
   Table,
   TableTitle,
   TableHeader,
