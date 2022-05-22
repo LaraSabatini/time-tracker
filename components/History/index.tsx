@@ -42,7 +42,7 @@ function History() {
                       end_time: string
                       duration: string
                     }) => (
-                      <Row className="row">
+                      <Row className="row" key={item.id}>
                         <Item>{item.description}</Item>
                         <Info>
                           <Item>{item.start_time}</Item>
@@ -65,7 +65,7 @@ function History() {
                     end_time: string
                     duration: string
                   }) => (
-                    <Information className="row">
+                    <Information className="row" key={item.id}>
                       <TableTitle>Description</TableTitle>
                       <Item>{item.description}</Item>
                       <TimeInfo>
