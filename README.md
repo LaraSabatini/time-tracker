@@ -24,4 +24,4 @@ yarn run dev
 
 ### See live project
 
-[Live project](https://vercel.com/larasabatini/roswell-studios)
+[Live project](https://roswell-studios.vercel.app/)
